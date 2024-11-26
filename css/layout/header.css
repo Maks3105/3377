@@ -64,6 +64,10 @@
     display: block;
 }
 
+.header__list-desktop {
+    display: none;
+}
+
 .header__nav {
     display: flex;
     flex-direction: column;
@@ -80,8 +84,9 @@
 }
 
 .header__nav.open-menu {
+    width: 100%;
     transition: 0.3s;
-    left: 0;
+    left: 0px;
 }
 
 .header__list {
@@ -95,4 +100,20 @@
 
 .header__nav.open-menu .header__list {
     width: 100%;
+}
+
+@media (min-width: 500px) {
+    .header__list-desktop {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .header__menu-burger {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
 }
