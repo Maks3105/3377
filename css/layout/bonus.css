@@ -1,0 +1,31 @@
+@import "../base/typography.css";
+
+.bonus {
+    padding: 50px 0;
+}
+
+.bonus__inner {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px dashed var(--color_font-main);
+}
+
+.bonus__title {
+    font-size: 20px;
+    font-family: var(--font_bold);
+    margin-bottom: 20px;
+}
+
+.bonus__list li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bonus__list li::before {
+    content: "⛃";
+    position: absolute;
+    left: -20px;
+    top: -1px;
+}
