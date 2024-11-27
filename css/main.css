@@ -2,8 +2,10 @@
 @import "./base/typography.css";
 @import "./base/core.css";
 
+
 @import "./layout/header.css";
 @import "./layout/hero.css";
 @import "./layout/bonus.css";
+@import "./layout/conditions.css";
 @import "./layout/benefits.css";
 @import "./layout/footer.css";

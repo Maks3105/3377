@@ -1,32 +1,34 @@
-.bonus {
+.conditions {
     padding: 50px 0;
 }
 
-.bonus__inner {
+.conditions__inner {
     max-width: 493px;
     margin: 0 auto;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 3px dashed var(--color_font-main);
+    border-left: 3px dashed var(--color_font-main);
 }
 
-.bonus__title {
+.conditions__title {
     text-transform: uppercase;
     font-size: 20px;
     font-family: var(--font_bold);
     margin-bottom: 20px;
 }
 
-.bonus__list li {
+.conditions__list li {
     position: relative;
+    text-align: end;
+    padding-right: 21px;
     margin-bottom: 10px;
 }
 
-.bonus__list li::before {
+.conditions__list li::after {
     content: "⛃";
     position: absolute;
-    left: -20px;
-    top: -1px;
+    right: 0;
+    top: 0;
 }
